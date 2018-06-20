@@ -52,6 +52,55 @@ var employees = [
 
 //Code Here
 
+//function employeeUpdater(){
+//  if(employees.hasOwnProperty("theo")){
+//    delete employees[i]
+//  } return employees
+//}
+
+//function employeeUpdater(){
+//for ( var i in employees ) {
+//  if ( employees.firstName[i] === 'theo' ) {
+//      delete obj[i];
+//  }
+//}return employees
+//}
+
+function employeeUpdater(){
+ for (let i = 0; i < employees.length; i++){
+   if(employees[i].firstName === 'Theo'){
+     employees.splice(i, 1);
+   }
+   if(employees[i].firstName === 'Lorie'){
+     employees[i].department = 'HR'
+   }
+ } return employees
+}
+
+//function employeeUpdater(){
+//for (let i = employees.length - 1; i >= 0; i--) {
+//  if (employees[i][0] === "theo") {
+//    employees.splice(i, 1);
+//  }
+
+//}
+
+//function employeeUpdater(){
+//for (let i = 0; i < employees.length; i++){
+//   if (employees[i][0] === "theo"){
+//      employees.splice(i, 1)
+//   }
+// }return employees
+//}
+
+//function employeeUpdater(){
+//  for ( let key in employees ){
+//       if (employees.firstName ===['theo']){
+//         delete employees['theo']
+//       }
+//     } return employees
+//  }
+
 
 
 ////////// PROBLEM 2 //////////
@@ -70,6 +119,39 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 
 //Code Here
 
+//function removeDuplicates(){
+//  var newWorkplaceAccidents = [];
+//    for (var i=0; i < workplaceAccidents.length; i++){
+//        if (workplaceAccidents[i] != workplaceAccidents[i+1]){
+//            newWorkplaceAccidents.push[i]
+//    } for (var i=0; i < newWorkplaceAccidents.length; i++){
+//        if (newWorkplaceAccidents[i] === newWorkplaceAccidents[i+1]){
+//            newWorkplaceAccidents[i].splice(i,1)
+//}
+//    }
+//  } return newWorkplaceAccidents
+//}
+
+function removeDuplicates(arr){
+      for (var i=0; i < arr.length; i++){
+        for (var j = i+1;j < arr.length; j++ ){
+            if(arr[i] === arr[j]){
+                arr.splice(j,1)
+                  i--
+                }
+            }
+        } return arr
+      }
+    
+//function removeDuplicates (arr) {
+//  let newArray = [];
+//  for(let i = 0; i < arr.length; i++) {
+//    if(!newArray.includes(arr[i])) {
+//    newArray.push(arr[i]);
+//  }
+//    }
+//    return newArray;
+//  }
 
 
 ////////// PROBLEM 3 //////////
