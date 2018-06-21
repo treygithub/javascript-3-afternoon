@@ -9,12 +9,14 @@
 ////////// PROBLEM 1 //////////
 
 // Do not edit the code below.
+
 var carDetails = {
   color: 'red',
   make: 'toyota',
   model: 'tacoma',
   year: 1994
 }
+
 // Do not edit the code above.
 
 /*
@@ -23,7 +25,7 @@ var carDetails = {
 
 //Code Here
 
-
+var {color,make,model,year} = carDetails;
 
 ////////// PROBLEM 2 //////////
 
@@ -35,7 +37,7 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  var {firstName, lastName, title} = obj;
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
