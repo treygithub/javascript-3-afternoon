@@ -82,7 +82,9 @@ class Manager extends Employee {
     this.reports.splice(index,1)
   }
 }
-let guy1 = new Manager("rodbert","hudnnicutt","roddb@gmaidl.com",12,reports)
+let guy1 = new Manager("rodbert","hudnnicutt","roddb@gmaidl.com",12, "reports")
+
+console.log(guy1)
 
 ////////// PROBLEM 3 //////////
 
